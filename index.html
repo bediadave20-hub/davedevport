@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Developer Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <canvas class="particles-canvas" id="particles"></canvas>
+
+<header class="header">
+  <div class="brand">
+    <div class="brand-dot"></div>
+    <h1 id="typing-h1" aria-live="polite"></h1>
+  </div>
+  <h2 id="typing-h2" class="name" aria-live="polite"></h2>
+
+  <nav class="nav" role="tablist" aria-label="Primary">
+    <button role="tab" data-slide="0" class="active" aria-selected="true">Home</button>
+    <button role="tab" data-slide="1" aria-selected="false">About</button>
+    <button role="tab" data-slide="2" aria-selected="false">Projects</button>
+    <button role="tab" data-slide="3" aria-selected="false">Resume</button>
+    <button role="tab" data-slide="4" aria-selected="false">Contact</button>
+  </nav>
+</header>
+
+<main class="slideshow">
+  <!----home---->
+  
+<section class="slide active video-slide" aria-labelledby="typing-role">
+   <div class="video-overlay"></div>
+
+  <div class="video-content hero">
+    <div class="hero-badge">Available for work</div>
+    <h2 id="typing-role" class="gradient-text"></h2>
+    <p id="typing-role-2" class="hero-sub"></p>
+    <div class="cta-row">
+      <a href="#projects" class="btn primary" data-slide="2">View Projects</a>
+      <a href="#contact" class="btn ghost" data-slide="4">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ABOUT -->
+  <section class="slide about-section" aria-labelledby="about-title">
+
+    <div class="about-overlay"></div>
+
+    <div class="about-content">
+      <h2 id="about-title" class="section-title">About Me</h2>
+
+      <div class="about-layout">
+        <img src="assets/me.jpg" class="about-img" alt="Portrait of Dave Joshua Bedia" onerror="this.src='https://via.placeholder.com/300x400/cccccc/ffffff?text=Portrait'">
+
+        <div class="about-info">
+          <h3>Cyber Security & Information Assurance</h3>
+          <ul class="about-details">
+            <li><strong>Name:</strong> Dave Joshua T. Bedia</li>
+            <li><strong>Age:</strong> 22</li>
+            <li><strong>Birthday:</strong> March 15, 2007</li>
+            <li><strong>City:</strong> Bacoor City, Cavite</li>
+            <li><strong>Phone:</strong> 09918862314</li>
+            <li><strong>Email:</strong> bediadave0@gmail.com</li>
+            <li><strong>Degree:</strong> BS Information Technology</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="about-text">
+        A motivated graduate with foundations in network defense, risk assessment,
+        and security technologies. Passionate about web development and cyber security.
+      </p>
+
+      <div class="stack reveal" aria-label="Primary tech stack">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Cybersecurity</span>
+        <span class="chip">Networking</span>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Years Learning</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">6+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS BAR -->
+    <div class="skills-bottom">
+      <div class="skill reveal">
+        <span>HTML</span>
+        <div class="bar"><div data-value="80%"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <span>CSS</span>
+        <div class="bar"><div data-value="75%"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <span>JavaScript</span>
+        <div class="bar"><div data-value="75%"></div></div>
+      </div>
+
+      <div class="skill reveal">
+        <span>Cyber Security Basics</span>
+        <div class="bar"><div data-value="80%"></div></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="slide" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title" class="section-title">My Projects</h2>
+
+    <div class="projects">
+      <div class="project-card reveal" data-title="Portfolio Website" data-desc="Personal portfolio showcasing skills, projects, and resume with animated UI." data-tags="HTML,CSS,JS">
+        <img src="https://via.placeholder.com/400x300/cccccc/ffffff?text=Portfolio+Screenshot" alt="Screenshot of portfolio website">
+        <p>Portfolio Website</p>
+      </div>
+
+      <div class="project-card reveal" data-title="Business Website" data-desc="Responsive small business site with services, gallery, and contact." data-tags="HTML,CSS,UX">
+        <img src="https://via.placeholder.com/400x300/cccccc/ffffff?text=Business+Website+Screenshot" alt="Screenshot of business website">
+        <p>Business Website</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+
+  <section class="slide" aria-labelledby="resume-title">
+    <div class="resume-content">
+      <h2 id="resume-title" class="section-title">Resume</h2>
+      <div class="resume-layout">
+        <img src="assets/resume.jpg" class="resume-img" alt="Resume preview image" data-title="Resume" data-desc="Full resume preview" data-tags="Resume" onerror="this.src='https://via.placeholder.com/400x300/cccccc/ffffff?text=Resume+Preview'">
+        <div class="resume-info">
+          <h3>Download My Resume</h3>
+          <p>Click the button below to download a copy of my resume in PDF format.</p>
+          <a class="btn primary" href="./assets/resume.jpg" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT -->
+  
+  <section class="slide video-slide" id="contact" aria-labelledby="contact-title">
+  
+  <div class="video-overlay"></div>
+
+  <div class="video-content">
+    <h2 id="contact-title" class="section-title">Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card copyable" data-copy="09918862314">
+        <span class="emoji" aria-hidden="true">📞</span>
+        <a href="tel:09918862314">09918862314</a>
+      </div>
+      <div class="contact-card copyable" data-copy="bediadave0@gmail.com">
+        <span class="emoji" aria-hidden="true">📧</span>
+        <a href="mailto:bediadave0@gmail.com">bediadave0@gmail.com</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- Project Modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close" data-close>×</button>
+      <img id="modal-img" alt="Project preview" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div class="modal-tags" id="modal-tags"></div>
+    </div>
+  </div>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
