@@ -129,15 +129,67 @@
   <section class="slide" id="projects" aria-labelledby="projects-title">
     <h2 id="projects-title" class="section-title">My Projects</h2>
 
-    <div class="projects">
-      <div class="project-card reveal" data-title="Portfolio Website" data-desc="Personal portfolio showcasing skills, projects, and resume with animated UI." data-tags="HTML,CSS,JS">
-        <img src="https://via.placeholder.com/400x300/cccccc/ffffff?text=Portfolio+Screenshot" alt="Screenshot of portfolio website">
-        <p>Portfolio Website</p>
-      </div>
+    <nav class="project-tabs" role="tablist" aria-label="Project tabs">
+      <button role="tab" class="tab-btn active" data-tab="projects" aria-selected="true">Projects</button>
+      <button role="tab" class="tab-btn" data-tab="experience" aria-selected="false">Work Experience</button>
+      <button role="tab" class="tab-btn" data-tab="education" aria-selected="false">Education</button>
+    </nav>
 
-      <div class="project-card reveal" data-title="Business Website" data-desc="Responsive small business site with services, gallery, and contact." data-tags="HTML,CSS,UX">
-        <img src="https://via.placeholder.com/400x300/cccccc/ffffff?text=Business+Website+Screenshot" alt="Screenshot of business website">
-        <p>Business Website</p>
+    <div class="tab-content active" id="projects-tab">
+      <div class="projects">
+        <div class="project-card reveal" data-title="Portfolio Website" data-desc="Personal portfolio showcasing skills, projects, and resume with animated UI." data-tags="HTML,CSS,JS">
+          <img src="https://via.placeholder.com/400x300/cccccc/ffffff?text=Portfolio+Screenshot" alt="Screenshot of portfolio website">
+          <p>Portfolio Website</p>
+        </div>
+
+        <div class="project-card reveal" data-title="Business Website" data-desc="Responsive small business site with services, gallery, and contact." data-tags="HTML,CSS,UX">
+          <img src="https://via.placeholder.com/400x300/cccccc/ffffff?text=Business+Website+Screenshot" alt="Screenshot of business website">
+          <p>Business Website</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="experience-tab">
+      <div class="experience">
+        <div class="experience-item reveal">
+          <h3>Internship at XYZ Company</h3>
+          <p class="experience-role">Cybersecurity Intern</p>
+          <p class="experience-duration">June 2023 - August 2023</p>
+          <ul>
+            <li>Assisted in network security assessments</li>
+            <li>Learned ethical hacking techniques</li>
+            <li>Contributed to security policy documentation</li>
+          </ul>
+        </div>
+        <div class="experience-item reveal">
+          <h3>Freelance Web Developer</h3>
+          <p class="experience-role">Web Developer</p>
+          <p class="experience-duration">Ongoing</p>
+          <ul>
+            <li>Developed responsive websites for small businesses</li>
+            <li>Implemented security best practices in web applications</li>
+            <li>Collaborated with clients to meet project requirements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="education-tab">
+      <div class="education">
+        <div class="education-item reveal">
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p class="education-institution">Cavite State University</p>
+          <p class="education-duration">2020 - 2024</p>
+          <p>Focused on network administration, cybersecurity, and software development. Graduated with honors.</p>
+        </div>
+        <div class="education-item reveal">
+          <h3>Certifications</h3>
+          <ul>
+            <li>CompTIA Security+</li>
+            <li>Google Cybersecurity Certificate</li>
+            <li>Certified Ethical Hacker (CEH)</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
