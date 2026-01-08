@@ -113,6 +113,10 @@ function setActiveSlide(index) {
     b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
     b.setAttribute('aria-selected', isActive ? 'true' : 'false');
   });
+  // Remove cursor classes when switching slides
+  document.getElementById('typing-h1').classList.remove('cursor');
+  document.getElementById('typing-h2').classList.remove('cursor');
+  document.getElementById('typing-role').classList.remove('cursor');
   current = index;
   if (index === 0) startHomeTyping();
 }
@@ -222,6 +226,28 @@ modal?.addEventListener('click', (e) => {
 
 window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !modal.hidden) closeModal();
+});
+
+/* Project Tabs */
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+function setActiveTab(tabName) {
+  tabContents.forEach(content => {
+    content.classList.toggle('active', content.id === tabName + '-tab');
+  });
+  tabButtons.forEach(btn => {
+    const isActive = btn.getAttribute('data-tab') === tabName;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+  });
+}
+
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tabName = btn.getAttribute('data-tab');
+    setActiveTab(tabName);
+  });
 });
 
 /* Copy-to-clipboard + toast */
