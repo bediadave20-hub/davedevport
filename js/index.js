@@ -342,3 +342,9 @@ form?.addEventListener('submit', async (e) => {
   }
   requestAnimationFrame(step);
 })();
+
+/* View Map Link */
+document.getElementById('view-map-link')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.open('https://www.google.com/maps?q=Bacoor+City,+Cavite,+Philippines', '_blank');
+});
