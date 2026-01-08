@@ -456,7 +456,7 @@ body::after {
 .cursor::after {
   content: "|";
   margin-left: 4px;
-  animation: blink 1s infinite;
+  animation: blink 3s infinite;
 }
 
 @keyframes blink {
