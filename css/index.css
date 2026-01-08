@@ -404,6 +404,161 @@ body::after {
   font-size: 0.9rem;
 }
 
+/* PROJECT TABS */
+.project-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  appearance: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.25s ease, box-shadow 0.25s ease, border-color .25s ease;
+  box-shadow: 0 4px 20px -12px rgba(236, 72, 153, 0);
+  backdrop-filter: blur(6px);
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.14);
+}
+
+.tab-btn:active {
+  transform: translateY(0);
+}
+
+.tab-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+.tab-btn.active {
+  color: #fff;
+  background: linear-gradient(135deg, rgba(236,72,153,0.25), rgba(59,130,246,0.25));
+  box-shadow: 0 18px 40px -20px rgba(236, 72, 153, 0.55);
+  border-color: rgba(255,255,255,0.18);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* EXPERIENCE */
+.experience {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.experience-item {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.experience-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.experience-role {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.experience-duration {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-item li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.experience-item li::before {
+  content: "•";
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+/* EDUCATION */
+.education {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.education-item {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.education-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.education-institution {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.education-duration {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.education-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-item li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
+}
+
+.education-item li::before {
+  content: "•";
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
 /* =====================
     RESUME
 ===================== */
